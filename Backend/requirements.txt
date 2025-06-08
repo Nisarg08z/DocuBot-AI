@@ -1,0 +1,13 @@
+fastapi
+uvicorn
+openai
+langchain
+langchain-community
+rq
+redis
+qdrant-client
+python-dotenv
+langchain-openai
+langchain-qdrant
+beautifulsoup4
+requests

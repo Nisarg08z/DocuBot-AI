@@ -1,0 +1,23 @@
+version: "3.9"
+
+services:
+  backend:
+    build: .
+    container_name: docubot-backend
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app
+    depends_on:
+      - valkey
+    environment:
+      - PYTHONUNBUFFERED=1
+      - OPENAI_API_KEY=.env
+    command: >
+      sh -c "uvicorn app.server:app --host 0.0.0.0 --port 8000 --reload"
+
+  valkey:
+    image: valkey/valkey
+    container_name: docubot-valkey
+    ports:
+      - "6379:6379"
