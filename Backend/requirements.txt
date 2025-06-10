@@ -1,13 +1,8 @@
 fastapi
-uvicorn
-openai
+uvicorn[standard]
 langchain
-langchain-community
-rq
-redis
 qdrant-client
-python-dotenv
-langchain-openai
-langchain-qdrant
-beautifulsoup4
+openai
+bs4
 requests
+python-dotenv
