@@ -29,7 +29,8 @@ origins = [
     "http://127.0.0.1:8000",
     "https://rag-a-web.nawin.xyz",
     "https://rag-a-web.vercel.app",
-    "http://localhost:5173"
+    "http://localhost:5173",
+    "http://localhost:5174"
 ]
 
 app.add_middleware(
